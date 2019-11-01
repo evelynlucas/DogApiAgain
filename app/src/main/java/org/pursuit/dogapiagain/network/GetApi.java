@@ -1,6 +1,6 @@
-package org.pursuit.dogapiagain;
+package org.pursuit.dogapiagain.network;
 
-import java.util.List;
+import org.pursuit.dogapiagain.model.Dog;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

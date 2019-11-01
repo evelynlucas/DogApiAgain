@@ -1,4 +1,4 @@
-package org.pursuit.dogapiagain;
+package org.pursuit.dogapiagain.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
