@@ -15,7 +15,7 @@ public class RetrofitSingleton {
             return ourInstance;
         }
         ourInstance = new Retrofit.Builder()
-                .baseUrl("")
+                .baseUrl("https://dog.ceo/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         return ourInstance;
