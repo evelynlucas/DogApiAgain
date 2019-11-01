@@ -1,4 +1,4 @@
-package org.pursuit.dogapiagain;
+package org.pursuit.dogapiagain.model;
 
 public class Dog {
     String dogName;
