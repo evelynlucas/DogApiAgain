@@ -10,6 +10,6 @@ public class Dog {
     public String getDogName() {
         return dogName;
     }
-    
+
 
 }
