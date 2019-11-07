@@ -2,6 +2,7 @@ package org.pursuit.dogapiagain;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -19,6 +20,7 @@ import retrofit2.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("CheckResult")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,21 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(response -> Log.d("mainActivity", response.getMessage().get(0)), error -> {
                     Log.d("failure", error.getMessage());
                 });
-
-
-//        Call<Dog> dogCall = getApi.getDogImages("hound");
-//        dogCall.enqueue(new Callback<Dog>() {
-//            @Override
-//            public void onResponse(Call<Dog> call, Response<Dog> response) {
-//                Log.d("mainActivity", response.body().getMessage().get(0));
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Dog> call, Throwable t) {
-//                Log.d("failure", t.getMessage());
-//
-//            }
-//        });
 
     }
 }
